@@ -6,5 +6,5 @@ class Character < ActiveRecord::Base
        "#{self.name} always says: #{self.catchphrase}"
      end
      
-      expect(urkel.say_that_thing_you_say).to eq("#{urkel.name} always says: #{urkel.catchphrase}")
+      #expect(urkel.say_that_thing_you_say).to eq("#{urkel.name} always says: #{urkel.catchphrase}")
 end
