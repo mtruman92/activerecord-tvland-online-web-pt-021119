@@ -3,6 +3,8 @@ class Character < ActiveRecord::Base
       belongs_to :actor
       
      def say_that_thing_you_say
-       Character.catchphrase
+       "#{self.name} always says: #{self.catchphrase}"
      end
+     
+      expect(urkel.say_that_thing_you_say).to eq("#{urkel.name} always says: #{urkel.catchphrase}")
 end
