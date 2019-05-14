@@ -8,7 +8,7 @@ class Actor < ActiveRecord::Base
   
   def list_roles
     #actor= self.characters.full_name
-   actor = Actor.new(:first_name, :last_name)
+   actor = Actor.new(:full_name)
    character = Character.new(:name)
    character.actor
    character.save
