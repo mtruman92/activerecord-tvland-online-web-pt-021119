@@ -12,12 +12,6 @@ class Actor < ActiveRecord::Base
     end
   end
   
-   emilia = Actor.new(:first_name => "Emilia", :last_name => "Clarke")
-    khaleesi = Character.new(:name => "Khaleesi")
-    khaleesi.actor = emilia
-    khaleesi.save
-
-    khaleesi.reload
-    expect(emilia.characters).to include(khaleesi)
-    expect(khaleesi.actor).to eq(emilia)
 end
+  
+  
