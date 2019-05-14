@@ -1,6 +1,6 @@
 class AddCatchPhraseToCharacter
    
     def change
-      add_column :catchphrase, character
+      add_column :character, :catchphrase , :string
     end
 end 
